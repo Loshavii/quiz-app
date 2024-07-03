@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <button id="cancelQuizBtn">Cancel Quiz</button>
+    </div>
+    <div class="filter-buttons">
+        <button id="javascriptQuestionsBtn">JavaScript Questions</button>
+        <button id="htmlQuestionsBtn">HTML Questions</button>
+        <button id="cssQuestionsBtn">CSS Questions</button>
+    </div>
+    
+        <div id="timer" style="justify-content: left; justify-items: left;">
+            <svg>
+                <circle cx="50" cy="50" r="45"></circle>
+                <circle cx="50" cy="50" r="45" id="timeCircle"></circle>
+            </svg>
+            <div id="timeRemaining">20</div>
+        </div>
+   
+    <div id="quizContainer"></div>
+        <h2 id="questionTitle"></h2>
+        <ul id="optionsList"></ul>
+        <button id="submitAnswerBtn">Submit Answer</button>
+    </div>
+    <div id="resultCard" style="display: none;">
+        <h2 id="resultMessage"></h2>
+        <button id="restartQuizBtn">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
